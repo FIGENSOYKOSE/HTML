@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Java Script Array Example 2 </title>
+    </head>
+    <body>
+        <h1>Java script Array Example 2</h1>
+        <div id="demo" ></div>
+        <script>
+           const fruits=["Banana", "Apple", "Grapes", "Orange"];
+
+           let fruitList = "<ul>";
+            document.write("Length of the Array is" + fruits.length);
+            fruits.forEach(printArray);
+            fruitList += "<ul>";
+                function printArray(value) {
+                    fruitList += "<li>" + value + "</li>";
+                }
+            document.getElementById("demo").innerHTML=fruitList;
+            </script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+
+body
+{
+    background-color:orange; 
+    text-align:center; 
+    
+    
+}
+
+
+
+h1
+{
+    color: red;
+    text-align:center;
+   
+      
+}
+h3
+{
+    color:green;
+    text-align:center;
+  
+    
+    
+}
+.divclass
+{
+    padding: 20px;
+    margin: 5px; 
+    content:none;
+    border: solid rgb(70, 206, 88);
+    border-radius: 10px;
+              
+}
+.divclass2
+{
+    border:solid rgb(70, 206, 88);
+    padding: 20px;
+    margin: 5px; 
+    content:none;
+    border-radius: 10px;
+
+}
+ol {
+    background: orange;
+    list-style-position: inside;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:rgb(153, 7, 7);
+      
+  }
+  
+  p.solid 
+  {
+    border-style: solid;
+    font-weight: 20px;
+  }
+  input[type="text"] {
+
+    border:none; 
+    border-bottom:1px solid black;
+    width: 500px;
+    height: 35px ;
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(153, 7, 7);
+ }
+ #supermarket {
+    width: 1300px;
+    height: 100px;
+}
+
+.button1 {
+
+        background-color: #e67e22;
+    
+        border: none;
+    
+        color: white;
+    
+        padding: 15px 30px;
+    
+        text-align: center;
+    
+        text-decoration: none;
+    
+        display: inline-block;
+    
+        font-size: 16px;
+    
+        margin: 4px 2px;
+    
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        border-radius: 10px;
+    }
+
+
+    .button2 {
+
+        background-color: #e67e22;
+    
+        border: none;
+    
+        color: white;
+    
+        padding: 15px 30px;
+    
+        text-align: center;
+    
+        text-decoration: none;
+    
+        display: inline-block;
+    
+        font-size: 16px;
+    
+        margin: 4px 2px;
+    
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        border-radius: 10px;
+    }
+
+
+
+   
+  
+  
+  
+  
+  
+  
+  
+  

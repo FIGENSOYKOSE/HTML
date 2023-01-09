@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>HTML FORMS</title>
+    </head>
+    <body>
+        <h1>Student Registration Form</h1>
+        <form>
+            <div style="background-color:aqua">
+            <label>Name</label><br>
+            <input type="text" id="fname" name="fname"/>
+            <input type="text" id="lname" name="lname" /><br>
+            <label>Email address*</label><br>
+            <input type="text" id="email" name="email" /><br>
+            <label>Gender</label><br>
+            <input type="radio" id="maleoption" name="gender" text="Male" value="Male" />
+            <label>Male</label>
+            <input type="radio" id="femaleoption" name="gender" value="Female"/>
+            <label>Female</label><br>
+            <label>Hobbies</label><br>
+            <input type="checkbox" id="hobbies" name="football"/>
+            <label>Football</label>
+            <input type="checkbox" id="hobbies" name="tennis"/>
+            <label>Tennis</label>
+            <input type="checkbox" id="hobbies" name="other">
+            <label>Other</label><br>
+            <label>Province</label><br>
+            <select id="province" name="province">
+                <option value="00">--Select Province--</option>
+                <option value="ON">Ontario</option>
+                <option value="QB">Quebec</option>
+                <option value="AB">Alberta</option>
+                <option value="BC">British Columbia</option>
+                <option value="OT">Other</option>
+            </select><br>
+            <label>Provide short description about yourself</label><br>
+            <textarea id="description" name="description" rows="10" cols="30">     
+            </textarea><br>
+            <label>Password</label><br>
+            <input type="password" id="password" name="password"/><br><br>
+            <input type="reset" value="Reset Form" />
+            <input type="submit" value="Submit Form"/>
+            <input type="button" value="Close Form"/>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            Javascript Example 15
+        </title>
+    </head>
+    <body>
+        <h1>Javascript Example 15 </h1>
+        <p id="demo"></p>
+        <script>
+            let country = "Peru";
+            let continent = "";
+            
+            switch(country){
+                case "Canada":
+                case "USA":
+                case "Maxico":
+                    continent = "North America";
+                    break;
+                case "Brazil":
+                case "Argentina":
+                case "Peru":
+                    continent = "South America";
+                    break;
+                case "England":
+                case "France":
+                case "Spain":
+                    continent = "Europe";
+                    break;
+                default:
+                    continent = "Asia or Africa";
+
+            }
+
+            
+            document.getElementById("demo").innerHTML = "Your country is " + country + " so You are in " + continent;
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+

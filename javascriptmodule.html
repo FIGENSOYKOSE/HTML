@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Javascript Modules</title>
+    </head>
+    <body>
+        <h1>Javascript Modules Example</h1>
+        <p id="demo"></p>
+        <!-- use type="module" when you want to import something-->
+        <script type="module"> 
+            import message from "./message.js";// importing message function from file message.js
+            
+            document.getElementById("demo").innerHTML = message();
+        </script>
+    </body>
+</html>

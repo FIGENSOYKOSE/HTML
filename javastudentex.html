@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Student List Manager</title>
+    </head>
+    <body>
+        <h1>Student List Manager</h1>
+
+        <div id="divstudententry">
+            <h3>Enter Student Name</h3>
+            <input type="text" id="txtStudentName"/>
+            <button type="submit" id="btnAdd" onclick="addStudentName()" >Add</button>
+        </div>
+
+        <div id="divlist">
+            <h3>Students List</h3>
+            <div id="divstudentlist">
+                <ol>
+                    <li>Display Student Names here</li>
+                </ol>
+            </div>
+        </div>
+        <script>
+            let studentNames = []; //Define Student names array
+
+            //Add Student Name function
+            function addStudentName(){
+                console.log(document.getElementById("txtStudentName").value); // Use value property to get textbox text
+
+                if(document.getElementById("txtStudentName").value == ""){
+                    return; //return works same as break but it is used with function 
+                    //use return to get out of any function.
+                }
+
+                //Add Student name to Array
+                studentNames.push(document.getElementById("txtStudentName").value);
+                //Clear Student Name Text box
+                document.getElementById("txtStudentName").value = ""; //Changing the value
+
+                console.log(studentNames);
+                //Print Student Names
+                printStudentNames();
+            }
+
+            function deleteStudentName(arrayindex){
+                console.log("Delete Student Name " + studentNames[arrayindex]);
+
+                //Delete array element at index arrayindex
+                studentNames.splice(arrayindex,1);
+
+                console.log(studentNames);
+
+               //Print Student Names
+               printStudentNames();
+
+            }
+
+            function printStudentNames(){
+                 //Print Student Array.
+                 let strStudentList= "<ol>";
+                //Loop through array
+                for(let i =0;i<studentNames.length;i++){
+                    strStudentList += "<li>" + studentNames[i] + " <button id='btnDelete' onclick='deleteStudentName(" + i + ")' >Delete</button> </li>";
+                }
+                strStudentList +="</ol>";
+
+                document.getElementById("divstudentlist").innerHTML = strStudentList; //CHANGING VALUE OF P
+            }
+
+        </script>
+    </body>
+</html>

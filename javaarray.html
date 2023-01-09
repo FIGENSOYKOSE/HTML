@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> JavaScript Example 6 </title>
+    </head>
+    <body>
+        <h1>Javascript Example 6</h1>
+        <script>
+            const fruits = ["Banana", "Apple", "Cherry", "Kiwi",];
+            let arraylength = fruits.length; //original Lenght of the array
+            document.write ("<br>");
+            document.write(fruits);
+
+            document.write ("<br>");
+
+            for(i=0;i<fruits.length;i++){
+                //changing element of array at index i
+                fruits[i] += "_123";
+                document.write("<br>");
+
+                document.write("The array element at index" + i);
+                document.write("<br>");
+                document.write(fruits[i]);
+
+            }
+
+            document.write("<br>")
+            document.write(fruits);
+        </script>
+    </body>
+</html>

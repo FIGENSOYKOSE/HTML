@@ -1,0 +1,64 @@
+<html>
+    <head>
+    <title>
+        Javascript Operators
+    </title>
+</head>
+<body>
+    <h1>Javascript Comparision Operators</h1>
+    
+    <script>
+
+        //Comparision will return boolean value - true/false
+        let x =5; //number
+        let y ="5";//string
+        let z =9;
+        let compare1 = (x==y);//Normal comparision
+        document.write("<br> Is " + x + " is  equal to " +  y + "? " + (x==y));
+        document.write("<br> Is " + x + " is strict equal to " +  y + "? " + (x===y));
+        document.write("<br> Is " + x + " is not equal to " +  y + "? " + (x!=y));
+        document.write("<br> Is " + x + " is strict not equal to " +  y + "? " + (x!==y));
+        document.write ("<br> Is " + x + " is greater than " +  z + "? " + (x>z));
+        document.write ("<br> Is " + x + " is less than " +  z + "? " + (x<z));
+        document.write ("<br> Is " + x + " is less than or equal to " +  y + "? " + (x<=y));
+        document.write ("<br> Is " + x + " is greater than or equal to " +  y + "? " + (x>=y));
+    </script>
+
+    <h1>Javascript Logical Operators</h1>
+
+    <script>
+        let a =6, b=3,c=4;
+
+        //conditon1 And condition2 =  if both condition is true than true
+        document.write ("is (a>b) and (a>c) ?" + (a>b && a>c));
+        document.write ("<br>is (c>a) and (c>b) ?" + (c>a && c>b));
+        //conditon1 OR condition2 =  if any of the condition is true than true
+        document.write ("<br>is (a>b) or (a>c) ?" + (a>b || a>c));
+        document.write ("<br>is (c>a) or (c>b) ?" + (c>a || c>b));
+        document.write ("<br>is (b>a) or (b>c) ?" + (b>a || b>c));
+
+        //NOT means opposite of the comparision i.e true will become false
+        document.write ("<br>is (c>b) ?" + ( c>b));
+        document.write ("<br>is Not (c>b) ?" + !( c>b));
+        document.write ("<br>is Not (c< b) ?" + !( c<b));
+    </script>
+    <h1>Javascript Ternary Operators</h1>
+    <script>
+        a=2, b=4, c=3;
+        document.write("<br> a = "+ a + ", b = "+ b + ", c = " +c );
+        document.write("<br>Is a bigger than b?" + (a>b?"yes":"NO"));
+        document.write("<br>Is a bigger than c?" + (a>c?"yes":"NO"));
+        document.write("<br>Is c smaller than b?" + (c<b?"Yes":"No"));
+        document.write("<br>Is a bigger than b and c?" + (a>b?(a>c?"Yes":"NO"):"no"));
+    </script>
+</body>  
+</html>
+  
+
+
+
+
+
+
+
+

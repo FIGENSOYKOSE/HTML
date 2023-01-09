@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Java Script Array Example 3 </title>
+    </head>
+    <body>
+        <h1>Java script Array Example 3</h1>
+        <div id="demo" ></div>
+        <script>
+            //Defining a array
+           const fruits=["Banana", "Apple", "Grapes", "Orange"];
+
+           //Add new element to array
+           document.write("<br> Length of my array is" + fruits.length);
+           document.write("<br>Array : " + fruits);
+
+           fruits[fruits.length]="Lemon"; //Add new element to array using length
+           document.write("<br> New Length of my array is" + fruits.length);
+           document.write("<br>Array :" + fruits);
+
+            fruits[5] = "Cherry"; //Add new element to array using Number
+            document.write("<br> New Length of my array is" + fruits.length);
+            document.write("<br>Array :" + fruits);
+
+            fruits.push("Kiwi"); //Add new element to array using Number
+            document.write("<br> New Length of my array is" + fruits.length);
+            document.write("<br>Array :" + fruits);
+
+            document.getElementById("demo").innerHTML = fruits;
+           
+
+            </script>
+    </body>
+</html>

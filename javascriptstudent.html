@@ -1,0 +1,78 @@
+
+<html>
+<head>
+    <title> Javascript Student Registration Form </title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div id="divRegistration" style="border-color: darkgray; background-color: gray;">
+    <h2>Register Student</h2>
+    <label>First Name</label><br>
+    <input id="txtFirstName" type="text" placeholder="Enter First Name">
+    <br>
+    <label>Last Name</label><br>
+    <input id="txtLastName" type="text" placeholder="Enter Last Name">
+    <br>
+    <label>E-mail</label><br>
+    <input id="txtEmail" type="email" placeholder="Enter Email Address">
+    <br>
+    <label>Phone Number </label><br>
+    <input id="txtPhone" type="tel" placeholder="Enter Phone Number">
+    <br>
+    <label>Submit</label><br>
+    <input id="btnSubmit" type="submit" onclick="registerStudent()">
+    </div>
+    <script>
+        let studentList = []; //Student Array Object
+        function registerStudent(){
+            let student = {
+                firstName:"",
+                lastName:"";
+                email:"",
+                phone:"",
+            };
+
+                student.firstName = document.getElementById("txtFirstName").value;
+                student.lastName = document.getElementById("txtLastName").value;
+                student.email = document.getElementById("txtEmail").value;
+                student.phone = document.getElementById("txtPhone").value;
+
+
+                console.log (student);
+
+                studentList.push(student);
+
+                console.log(studentList);
+  //Clear the input fields
+  document.getElementById("txtFirstName").value="";
+  document.getElementById("txtLastName").value="";
+  document.getElementById("txtEmail").value="";
+  document.getElementById("txtPhone").value="";
+
+  //Show Studetns List
+  showStudentsList();
+}
+
+function showStudentsList(){
+  let strStudentTable = "<table style='border-style:solid;border-color:black;'>";
+  strStudentTable += "<tr>";
+  strStudentTable += "<th>Sr.No.</th><th>First Name</th><th>LastName</th><th>Email</th><th>Phone</th>";
+  strStudentTable += "</tr>";
+  
+  //Loop through student Array
+  for(let i=0;i<studentList.length;i++){
+      strStudentTable += "<tr>";
+      strStudentTable += "<td>" + (i+1) + "</td>";
+      strStudentTable += "<td>" + studentList[i].firstName + "</td>";
+      strStudentTable += "<td>" + studentList[i].lastName + "</td>";
+      strStudentTable += "<td>" + studentList[i].email + "</td>";
+      strStudentTable += "<td>" + studentList[i].phone + "</td>";
+      strStudentTable += "</tr>";
+  }
+  strStudentTable+="</table>";
+  //document.write(strStudentTable);
+  document.getElementById("divStudentsList").innerHTML = strStudentTable;
+}
+</script>
+</body>
+</html>

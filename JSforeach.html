@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> foreach </title>
+    </head>
+    <body>
+        <h2> foreach method </h2>
+        <p id="demo"></p>
+        <script>
+            const number = [45, 4, 9, 16, 25];
+            let txt ="";
+            number.forEach(myFunction);
+
+            document.getElementById("demo").innerHTML=number;
+
+            function myFunction(value,index,array)
+            {
+                txt +=value+ "<br>";
+            }
+        </script>
+    </body>
+</html>

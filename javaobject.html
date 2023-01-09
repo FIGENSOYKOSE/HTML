@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Javascript Objects</title>
+    </head>
+    <body>
+        <h1>Javascript Objects</h1>
+        <div id="demo"></div>
+        <script>
+            //Define a object called Student
+            const student ={
+                //Properties
+                firstname:"John",
+                lastname:"Doe",
+                rollno: 101,
+                birthdate: "03/01/1999",
+                weight: 60,
+                height: 5.7,
+                gender:"Male",
+                active: true,
+                courses: ["Maths", "Science", "English"],
+                
+             getStudentName: function(){
+                return this.firstname + " " + this.lastname;
+            },
+            getStudentCourses: function(){
+                return this.courses.join (" * ");
+            }
+
+            };
+            //print Student Details
+            let studentDetails = "<ol>";
+                studentDetails += "<li>Student Name: " + student.getStudentName() + "</li>";
+                studentDetails += "<li>Student Courses: " + student.getStudentCourses() + "</li>";
+                studentDetails += "<li>Student RollNo:" + student.birthdaterollno + "</li>";
+                studentDetails += "<li>Student BirthDate:" + student.birthdate + "</li>";
+                studentDetails += "</ol>"
+
+                document.getElementById("demo").innerHTML = studentDetails;
+
+        </script>
+    </body>
+</html>

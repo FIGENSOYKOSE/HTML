@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>find</title>
+    </head>
+    <body>
+        <h2>findmethod</h2>
+        <p id="demo"></p>
+        <script>
+
+            const numbers =[4,9,16,25,29];
+            let first =numbers.find(myfunction);
+
+            document.getElementById("demo").innerHTML=numbers;
+
+            function myfunction (value,index,array)
+            {
+                return value >18;
+            }
+        </script>
+    </body>
+</html>

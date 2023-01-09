@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript JSON Example</title>
+</head>
+<body>
+    <h1>JavaScript JSON Example</h1>
+    <p id="demo"></p>
+    <script>
+        //Define a JSON String
+    let studentjson = '{"firstname":"John", "lastname":"Doe", "age":15, "phone":"9990003344"}';
+        
+        //Covert json  into Javascript object
+        const student =  JSON.parse(studentjson);
+
+        let output = "Hello " + student.firstname + " " + student.lastname + ", Your age is " + student.age;
+
+        document.getElementById("demo"). innerHTML = output;
+
+        //Update Javascript Object Values
+        student.firstname = "Jen";
+        student.phone = "888-999-7676";
+
+        //Convert Javascript object to JSON
+        let newstudentjson = JSON.stringify(student);
+
+        document.write(newstudentjson);
+    
+
+
+    </script>
+</body>
+</html>

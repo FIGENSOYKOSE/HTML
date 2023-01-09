@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            Javascript Example 14
+        </title>
+    </head>
+    <body>
+        <h1>
+            Javascript Example 14
+        </h1>
+        <p id="demo"></p>
+        <script>
+            let day = 3;
+            let dayname = "";
+
+            switch(day){
+                case 0:
+                        dayname = "Sunday";
+                        break;
+                case 1:
+                        dayname = "Monday";
+                        break;
+                case 2:
+                        dayname = "Tuesday";
+                        break;
+                case 3:
+                        dayname = "Wednesday";
+                        break;
+                case 4:
+                        dayname = "Thursday";
+                        break;
+                case 5:
+                        dayname = "Friday";
+                        break;
+                case 6:
+                        dayname = "Saturday";
+                        break;
+                default: 
+                        dayname = "Invalid Day";
+            }
+            switch(day){
+                case 0:
+                case 6:
+                    document.write("This is Weekend");
+                    break;
+                case 1:
+                case 2:
+                case 3:
+                    document.write("This is early week");
+                    break;
+                case 4:
+                case 5:
+                    document.write("This is later week");
+            }
+
+                document.getElementById("demo").innerHTML = " The day of the week is " + dayname;
+        </script>
+    </body>
+</html>

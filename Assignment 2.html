@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+        <title>My Grocery Items</title>
+    
+        <link rel="stylesheet" href="C:\Users\90534\OneDrive\Masaüstü\HTML\Assignment2css.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+    </head>
+    <body>
+        <img id= "supermarket" src="C:\Users\90534\OneDrive\Masaüstü\supermarket.jpg"/>
+        <h1>Keep My List</h1>
+
+        <div id="divGroceries" class="divclass">
+         <h3>Add Grocery Items</h3>
+            <input type="text" id="txtGroceries"/>
+             <br/><br/>
+            <button  class="button1" type="submit" id="btnAdd" onclick="addGroceries()" >Submit</button>
+        </div>
+        <div id="divList" class="divclass2">
+            <h3>Grocery List</h3>
+            <div id="divgroceryList">
+                <ol>
+                    <li>Display Grocery Items here </li>
+                </ol>
+                
+            </div>
+            <button class="button2" type="reset" id="btnReset" onclick="deletegroceryList()">Clear Items</button>
+        </div>
+        <script src="Assignment2.js"></script>
+       
+    </body>
+</html>

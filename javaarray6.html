@@ -1,0 +1,23 @@
+<html>
+    <title>
+        Javasctipt Example 7
+    </title>
+    <body>
+        <h1>Javascript Example 7</h1>
+        <script>
+            const girlStudents = ["Pinar", "Roji", "Figen"];
+            const boyStudents = ["Robin","Cicek","Aksoy","Cigez"];
+            const instructors = ["Amar","Mohini"];
+            document.write("<br>");
+            document.write(girlStudents);
+            document.write("<br>");
+            document.write(boyStudents);
+            const students = girlStudents.concat(boyStudents); //Merge two arrays using Concat method
+            document.write("<br>");
+            document.write(students);
+            const classarray = girlStudents.concat(boyStudents,instructors);
+            document.write("<br>");
+            document.write(classarray);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> JavaScript Example 5 </title>
+    </head>
+    <body>
+        <h1>JavaScript Example 5 </h1>
+        <script>
+            const fruits = ["Banana", "Apple", "Cherry", "Kiwi"];
+            let arraylength = fruits.length; //Original length of the array
+            document.write(fruits);
+            document.write("<br>");
+            //Remove elements from Array using POP
+            for (let i=0; i<arraylength; i++) {
+                document.write ("<br>");
+                //remove element
+                document.write (fruits.pop());
+               
+               
+                document.write ("<br>");
+                document.write (fruits);
+                document.write("New Length of Array" + fruits.length);
+
+            }
+        </script>
+    </body>
+</html>

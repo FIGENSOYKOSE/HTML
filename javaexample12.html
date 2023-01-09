@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Javascript Example 12
+        </title>
+    </head>
+    <body>
+        <h1>Javascript Example 12 <h1>
+            <p id="greet"></p>
+
+        <script>
+            let hour = 9;
+            if(hour<10){
+                document.getElementById("greet").innerHTML = "Good Morning"
+            }
+            else if(hour<18){
+                document.getElementById("greet").innerHTML = "Good Day";
+            }else{
+                document.getElementById("greet").innerHTML = "Good Evening";
+            }
+        </script>
+    </body>
+</html>
